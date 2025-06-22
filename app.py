@@ -4,11 +4,11 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pickle
 
-# Create Flask app
+# Creating Flask app
 app = Flask(__name__)
 CORS(app) 
 
-# Load model and vectorizer
+# Loading model and vectorizer
 with open("spam_model.pkl", "rb") as f:
     model = pickle.load(f)
 
@@ -27,10 +27,10 @@ def predict():
     if not message:
         return jsonify({"error": "No message provided"}), 400
 
-    # Vectorize input message
+    # Vectorizing input message
     vect_msg = vectorizer.transform([message])
     
-    # Predict
+    # Predicting
     prediction = model.predict(vect_msg)[0]
     label = "Spam" if prediction == 1 else "Not Spam"
 
