@@ -3,7 +3,9 @@ Detect spam emails in Gmail in real-time using a trained machine learning model.
 
 # 🚀 Features
 ✅ Automatically scans opened emails on Gmail
+
 📊 Uses a trained Naive Bayes classifier (trained on spam.csv)
+
 📦 Real-time predictions using a Flask API
 
 # 🔍 Displays a banner on each email:
