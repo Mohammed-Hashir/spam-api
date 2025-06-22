@@ -1,7 +1,12 @@
 # app.py
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pickle
+
+# Create Flask app
+app = Flask(__name__)
+CORS(app) 
 
 # Load model and vectorizer
 with open("spam_model.pkl", "rb") as f:
@@ -9,9 +14,6 @@ with open("spam_model.pkl", "rb") as f:
 
 with open("vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
-
-# Create Flask app
-app = Flask(__name__)
 
 @app.route("/")
 def home():
