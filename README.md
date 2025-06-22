@@ -106,4 +106,4 @@ Banner shows green check for non-spam email.
 * HTML (optional)
 
 # 📬 Contact
-Feel free to connect with me on [LinkedIn](www.linkedin.com/in/mohammed-hashir-99793428a) or \[[email@example.com](mailto:smdhashir2006@gmail.com)]
+Feel free to connect with me on [LinkedIn](www.linkedin.com/in/mohammed-hashir-99793428a) or \[[smdhashir2006@gmail.com](mailto:smdhashir2006@gmail.com)]
